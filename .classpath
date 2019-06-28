@@ -2,6 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="webApp/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="webApp/WEB-INF/lib/servlet-api.jar" sourcepath="/Users/revanwang/Desktop/JV/高级/04_JavaWeb(一期龙哥主讲,xmind相同)/apache-tomcat-7.0.94-src"/>
 	<classpathentry kind="output" path="webApp/WEB-INF/classes"/>
 </classpath>
