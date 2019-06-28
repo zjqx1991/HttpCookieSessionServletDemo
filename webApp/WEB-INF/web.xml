@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="false"><!-- true表示忽略注解 -->
+  
+
+<!-- 
+	
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>com.revanwang.servlet.test.TestServlet</servlet-class>
+		
+		配置初始化参数
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>Revan</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>age</param-name>
+			<param-value>29</param-value>
+		</init-param>
+		
+	</servlet>
+使用注解	
+	
+		1、向外曝露该Servlet类的一个资源名称，共外界访问，该资源名称必须要以 / 开头
+		2、部署项目
+			在Tomcat根目录下 "/Library/Tomcat7/conf/server.xml"
+			<Context docBase="/Users/revanwang/Desktop/Java/workspace/01_JavaWeb/01_ServletTest/webApp" path="servletTest"/>
+			访问：
+			http://ip:port/contextPath/资源名
+   			http://localhost:80/servletTest/test
+	
+	
+	
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CalculatorServlet</servlet-name>
+		<servlet-class>com.revanwang.servlet.calculator.CalculatorServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>CalculatorServlet</servlet-name>
+		<url-pattern>/calculator</url-pattern>
+	</servlet-mapping>
+ -->
+ 
+</web-app>
