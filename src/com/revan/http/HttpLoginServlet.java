@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * @Desc 由于Http的无状态特性，所以要再请求下一个界面时，通过在请求连接中拼接参数
@@ -41,10 +42,10 @@ public class HttpLoginServlet extends HttpServlet {
 				userName = req.getParameter(keyString);
 			}
 		}
-		System.out.println(userName);	
-		
 		//3、处理业务
-		
+		HttpSession session = req.getSession();
+		session.setAttribute("username", userName);
+	
 		//4、跳转界面（输出界面）
 		PrintWriter out = resp.getWriter();
 		out.print("欢迎：" + userName);
